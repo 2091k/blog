@@ -76,3 +76,43 @@ body.dark pre.highlight .copy-btn {
 body.dark pre.highlight .copy-btn:hover {
   background: #555;
 }
+
+/* 代码块横向滚动条美化 */
+pre.highlight {
+  /* 保留横向滚动，纵向不溢出 */
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* 滚动条整体宽度/高度 */
+pre.highlight::-webkit-scrollbar {
+  height: 6px; /* 横向滚动条高度，越小越细 */
+}
+
+/* 滚动条轨道背景 */
+pre.highlight::-webkit-scrollbar-track {
+  background: #333;
+  border-radius: 3px;
+}
+
+/* 滚动滑块 */
+pre.highlight::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 3px;
+}
+
+/* 鼠标悬浮滑块加深 */
+pre.highlight::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+/* 浅色模式适配 */
+body:not(.dark) pre.highlight::-webkit-scrollbar-track {
+  background: #eee;
+}
+body:not(.dark) pre.highlight::-webkit-scrollbar-thumb {
+  background: #bbb;
+}
+body:not(.dark) pre.highlight::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
