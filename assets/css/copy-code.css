@@ -3,8 +3,11 @@ div.highlighter-rouge {
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-  margin: 1.2rem 0;
+  margin: 1.2rem auto;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  /* 限制代码块最大宽度，不会铺满页面变宽 */
+  max-width: 920px;
+  width: 100%;
 }
 
 /* Mac顶部标题栏 */
@@ -32,12 +35,52 @@ div.highlighter-rouge::after {
     54px 0 0 #28ca42;  /* 绿 */
 }
 
-/* 代码区域留白，避开顶部标题栏 */
+/* 代码区域留白，避开顶部标题栏，清除底部多余白边 */
 pre.highlight {
   margin: 0 !important;
-  padding: 16px !important;
-  padding-top: 12px !important;
+  padding: 0 !important;
   border-radius: 0;
+  /* 滚动条配置 */
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+pre.highlight code {
+  display: block;
+  padding: 16px;
+  padding-top: 12px !important;
+}
+
+/* 适配Rouge表格行号布局，消除底部留白、边框间隙 */
+pre.highlight .rouge-table {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  border: none;
+}
+pre.highlight .rouge-table td {
+  border: none;
+  padding: 0;
+  vertical-align: top;
+}
+/* 左侧行号列，禁止选中 */
+pre.highlight .rouge-gutter {
+  user-select: none;
+  padding-right: 10px;
+}
+pre.highlight .rouge-gutter pre {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+/* 右侧代码内容列 */
+pre.highlight .rouge-code {
+  padding-left: 10px;
+}
+pre.highlight .rouge-code pre {
+  margin: 0;
+  padding: 0;
+  background: transparent;
 }
 
 /* 右上角复制按钮（Mac栏右侧） */
@@ -65,7 +108,7 @@ pre.highlight .copy-btn.copied {
   color: #fff;
 }
 
-/* ===== 暗色模式适配（如果你的博客有黑夜切换） ===== */
+/* ===== 暗色模式适配 ===== */
 body.dark div.highlighter-rouge::before {
   background: #2d2d2d;
 }
@@ -78,12 +121,6 @@ body.dark pre.highlight .copy-btn:hover {
 }
 
 /* 代码块横向滚动条美化 */
-pre.highlight {
-  /* 保留横向滚动，纵向不溢出 */
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-
 /* 滚动条整体宽度/高度 */
 pre.highlight::-webkit-scrollbar {
   height: 6px; /* 横向滚动条高度，越小越细 */
@@ -106,7 +143,7 @@ pre.highlight::-webkit-scrollbar-thumb:hover {
   background: #888;
 }
 
-/* 浅色模式适配 */
+/* 浅色模式滚动条适配 */
 body:not(.dark) pre.highlight::-webkit-scrollbar-track {
   background: #eee;
 }
