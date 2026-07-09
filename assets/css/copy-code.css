@@ -44,7 +44,7 @@ pre.highlight {
 }
 pre.highlight code {
   display: block;
-  padding: 16px;
+  /* padding: 16px; */
   padding-top: 12px !important;
 }
 
