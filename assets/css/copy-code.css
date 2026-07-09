@@ -87,8 +87,8 @@ pre.highlight .copy-btn {
   top: 8px;
   right: 12px;
   padding: 3px 10px;
-  background: #ddd;
-  color: #222;
+  background: #dddddd24;
+  color: #d5d5d5;
   border: none;
   border-radius: 6px;
   font-size: 12px;
@@ -99,7 +99,7 @@ pre.highlight .copy-btn {
 }
 pre.highlight .copy-btn:hover {
   opacity: 1;
-  background: #ccc;
+  background: #dddddd24;
 }
 pre.highlight .copy-btn.copied {
   background: #28ca42;
