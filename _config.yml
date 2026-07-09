@@ -1,10 +1,10 @@
 # Site settings
-title: HiFeng's Blog
-SEOTitle: HiFeng's Blog_记录学习中的点点滴滴......
-header-img: img/home-bg.jpg
-email: webmaster@hicairo.com
-description: "HiFeng's Blog_记录学习中的点点滴滴......"
-keyword: "linux,debian,gentoo,ubuntu,redhat,centos,fedora,arch linux,openSuse,shell,bash,database,php,vps,v2ray,xray,vmess,vless,trojan,hysteria,naive,wireguard"
+title: Allen's Blog
+SEOTitle: 一叶知秋的blog
+header-img: img/home-blue.jpg
+email: k2091k@qq.com
+description: "Allen's Blog_记录学习中的点点滴滴......"
+keyword: "linux,debian,gentoo"
 url: "https://blog.2091k.cn" # your host, for absolute URL
 baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -17,10 +17,10 @@ wechat: false
 #qq_username: 10000
 #weibo_username: ifeng
 #zhihu_username: ifeng
-github_username: hiifeng
-twitter_username: HiaiFeng
-facebook_username: HiaiFeng
-telegram_username: HiaiFeng
+github_username: 2091k
+#twitter_username: HiaiFeng
+#facebook_username: HiaiFeng
+#telegram_username: HiaiFeng
 #linkedin_username:  firstname-lastname-idxxxx
 
 # Build settings
@@ -62,7 +62,7 @@ kramdown:
       start_line: 1
 
 # Disqus settings
-disqus_username: iifeng
+disqus_username: Allen
 
 # Netease settings
 netease_comment: false
@@ -78,7 +78,7 @@ netease_comment: false
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
 sidebar-about-description: "好好工作 快乐生活 ... <br> Contact me "
-sidebar-avatar: /img/Hiifeng.png # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/Allen.png # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # Featured Tags
 featured-tags: true # whether or not using Feature-Tags
@@ -94,11 +94,11 @@ page-mathjax: false
 # Friends
 friends:
   [
-    { title: "HiFeng's Blog", href: "http://www.hicairo.com" },
-    { title: "新月的博客", href: "https://blog.a--i.eu.org" },
-    { title: "科技小岛", href: "https://www.kejiland.com" },
-    { title: "耕读博客", href: "https://www.igengdu.com" },
-    { title: "HiDNS Free Domain", href: "https://www.hidoha.net" },
+#    { title: "HiFeng's Blog", href: "http://www.hicairo.com" },
+#    { title: "新月的博客", href: "https://blog.a--i.eu.org" },
+ #   { title: "科技小岛", href: "https://www.kejiland.com" },
+ #   { title: "耕读博客", href: "https://www.igengdu.com" },
+  #  { title: "HiDNS Free Domain", href: "https://www.hidoha.net" },
 #    { title: "JiyinYiyong", href: "http://tiye.me/" },
 #    { title: "DHong Say", href: "http://dhong.co" },
 #    { title: "尹峰以为", href: "http://ingf.github.io/" },
