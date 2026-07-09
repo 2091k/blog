@@ -22,9 +22,9 @@ description: "「世界那么大 我想去看看 ...」"
             {% endif %}
         </div>  -->
     </a>
-    <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
+<p class="post-meta">
+    Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%Y年%m月%d日" }}
+</p>
 </div>
 <hr>
 {% endfor %}
