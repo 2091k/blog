@@ -2,9 +2,8 @@
 div.highlighter-rouge {
   position: relative;
   border-radius: 10px;
-  overflow: hidden;
   margin: 1.2rem auto;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 50%);
   /* 限制代码块最大宽度，不会铺满页面变宽 */
   max-width: 920px;
   width: 100%;
@@ -14,7 +13,6 @@ div.highlighter-rouge {
 div.highlighter-rouge::before {
   content: "";
   display: block;
-  height: 36px;
   background: #f1f1f1;
   padding: 0 14px;
   box-sizing: border-box;
