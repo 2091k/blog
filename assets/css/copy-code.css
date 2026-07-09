@@ -1,0 +1,78 @@
+/* ===== Mac 窗口代码块整体容器 ===== */
+div.highlighter-rouge {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1.2rem 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Mac顶部标题栏 */
+div.highlighter-rouge::before {
+  content: "";
+  display: block;
+  height: 36px;
+  background: #f1f1f1;
+  padding: 0 14px;
+  box-sizing: border-box;
+}
+
+/* 三个红绿灯圆点 */
+div.highlighter-rouge::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  box-shadow:
+    18px 0 0 #ff5f57,  /* 红 */
+    36px 0 0 #ffbd2e,  /* 黄 */
+    54px 0 0 #28ca42;  /* 绿 */
+}
+
+/* 代码区域留白，避开顶部标题栏 */
+pre.highlight {
+  margin: 0 !important;
+  padding: 16px !important;
+  padding-top: 12px !important;
+  border-radius: 0;
+}
+
+/* 右上角复制按钮（Mac栏右侧） */
+pre.highlight .copy-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  padding: 3px 10px;
+  background: #ddd;
+  color: #222;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  opacity: 0.75;
+  transition: 0.2s;
+  z-index: 10;
+}
+pre.highlight .copy-btn:hover {
+  opacity: 1;
+  background: #ccc;
+}
+pre.highlight .copy-btn.copied {
+  background: #28ca42;
+  color: #fff;
+}
+
+/* ===== 暗色模式适配（如果你的博客有黑夜切换） ===== */
+body.dark div.highlighter-rouge::before {
+  background: #2d2d2d;
+}
+body.dark pre.highlight .copy-btn {
+  background: #444;
+  color: #eee;
+}
+body.dark pre.highlight .copy-btn:hover {
+  background: #555;
+}
