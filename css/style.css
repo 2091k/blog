@@ -82,3 +82,16 @@
       font-size: 14px
   }
 }
+
+/* 主页顶部大标题整体间距缩小 */
+.site-heading {
+  margin-top: 1.2rem !important;   /* 标题距离页面顶部空白，数值越小越靠上 */
+  margin-bottom: 0.8rem !important;/* 标题和下方文章列表的距离 */
+}
+/* 标题内部文字间距收紧 */
+.site-heading h1 {
+  margin: 0 0 6px 0 !important;
+}
+.site-heading .subheading {
+  margin: 0 !important;
+}
