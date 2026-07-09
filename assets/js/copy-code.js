@@ -10,18 +10,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btn.addEventListener('click', async () => {
       const codeEl = block.querySelector('code');
-      // 克隆一份代码节点，移除所有行号元素再取文本
+      // 克隆节点，不改动页面真实DOM
       const clone = codeEl.cloneNode(true);
-      const lineNumbers = clone.querySelectorAll('.lineno');
-      lineNumbers.forEach(el => el.remove());
-      const codeText = clone.innerText;
+      // 删除所有行号标签
+      clone.querySelectorAll('.lineno').forEach(item => item.remove());
+      // 获取文本并清理多余换行、首尾空白
+      let codeText = clone.innerText;
+      // 清除连续空行、首尾空白
+      codeText = codeText.replace(/^\s+|\s+$/g, '');
+      codeText = codeText.replace(/\n\s*\n+/g, '\n');
 
       try {
         await navigator.clipboard.writeText(codeText);
         btn.innerText = 'Copied!';
         btn.classList.add('copied');
       } catch (err) {
-        // 兼容低版本浏览器
+        // 兼容老旧浏览器
         const textarea = document.createElement('textarea');
         textarea.value = codeText;
         document.body.appendChild(textarea);
