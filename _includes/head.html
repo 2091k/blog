@@ -32,6 +32,9 @@
     <meta property="og:site_name" content="{{ site.SEOTitle }}">
 
     <title>{% if page.title %}{{ page.title }} - {{ site.SEOTitle }}{% else %}{{ site.SEOTitle }}{% endif %}</title>
+    
+    <!-- copy -->
+    <link rel="stylesheet" href="{{ '/assets/css/copy-code.css' | relative_url }}">
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="{{ site.baseurl }}/pwa/manifest.json">
