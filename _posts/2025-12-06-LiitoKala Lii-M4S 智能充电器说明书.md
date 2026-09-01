@@ -12,7 +12,7 @@ tags:
 
 ## 封面
 
-![1](https://jasuimg.2091k.cn/2091k/image/main/001/20260203181533_nwe82ldcw4.png)
+![1](https://jasuimg.521156.xyz/2091k/image/main/001/20260203181533_nwe82ldcw4.png)
 
 - 产品名称：LiitoKala Lii-M4S 智能充电器
 - 核心功能：触摸调控、4通道独立充电、电池容量检测、多重保护、USB输出、电池激活
