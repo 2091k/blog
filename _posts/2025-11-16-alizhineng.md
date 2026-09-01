@@ -46,7 +46,7 @@ IO0  | GND
 RX0  | TX
 TX0  | RX
 
-![1](https://jasuimg.2091k.cn/2091k/image/main/001/20251116221333_0lhgo5e1rc.jpg)
+![1](https://jasuimg.521156.xyz/2091k/image/main/001/20251116221333_0lhgo5e1rc.jpg)
 
 
 
@@ -57,8 +57,8 @@ TX0  | RX
 
 刷机完成联网成功电脑后登录巴法云后台输入验证码
 
-![2](https://jasuimg.2091k.cn/2091k/image/main/001/20251117084845_pimzrclrwy.png)
-![3](https://jasuimg.2091k.cn/2091k/image/main/001/20251117084938_p0j28o1fga.png)
+![2](https://jasuimg.521156.xyz/2091k/image/main/001/20251117084845_pimzrclrwy.png)
+![3](https://jasuimg.521156.xyz/2091k/image/main/001/20251117084938_p0j28o1fga.png)
 
 ---
 
@@ -96,4 +96,4 @@ TX0  | RX
 
 - 验证码可在抖音群里获取
 
-![image](https://jasuimg.2091k.cn/2091k/image/main/001/20251116222925_tr4mryfvh7.jpg)
+![image](https://jasuimg.521156.xyz/2091k/image/main/001/20251116222925_tr4mryfvh7.jpg)
