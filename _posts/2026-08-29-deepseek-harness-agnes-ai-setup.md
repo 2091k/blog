@@ -12,7 +12,7 @@ tags:
 
 
 # DeepSeek Harness安装与 接入免费Token Agnes-Ai 教程
-![image](https://jasuimg.2091k.cn/2091k/image/main/001/20260829093402_0nvdbuolpe.png)
+![image](https://jasuimg.521156.xyz/2091k/image/main/001/20260829093402_0nvdbuolpe.png)
 ## 1. 申请 API Key
 
 1. 打开 中国[Agnes-Ai 官网](https://www.agnes-ai.cn/)，注册并登录账号。
@@ -85,7 +85,7 @@ npm exec dsh web
 
 3. 点击 **保存**。
 
-![image](https://jasuimg.2091k.cn/2091k/image/main/001/20260829093323_g8i1ijwrfw.png)
+![image](https://jasuimg.521156.xyz/2091k/image/main/001/20260829093323_g8i1ijwrfw.png)
 
 ---
 
