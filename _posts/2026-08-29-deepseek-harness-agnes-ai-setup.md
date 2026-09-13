@@ -92,3 +92,11 @@ npm exec dsh web
 
 
 现在你可以使用 Agnes-Ai 接入的 DeepSeek Harness 了！
+
+## MCP连接器插件安装
+项目地址:https://github.com/xxxyz/DeepSeekHarness-MCP-Manager
+```
+pnpm exec dsh plugin --profile web add @xxxyz/dsh-mcp-manager@latest
+```
+## 插件仓库地址
+[https://awesome-dsh-plugin.com/zh/](https://awesome-dsh-plugin.com/zh/)
