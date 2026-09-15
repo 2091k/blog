@@ -57,6 +57,18 @@ pnpm approve-builds --all
 npm exec dsh web
 ```
 
+#### 查看 npm 上所有已发布版本
+```
+npm view @deepseek-ai/dsh versions
+npm view @deepseek-ai/dsh dist-tags
+```
+
+- pnpm 版本号 安装
+```
+pnpm add @deepseek-ai/dsh@0.1.6-alpha.1
+```
+
+
 ---
 
 #### 方法3：
