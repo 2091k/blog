@@ -62,8 +62,8 @@ npm exec dsh web
 npm view @deepseek-ai/dsh versions
 npm view @deepseek-ai/dsh dist-tags
 ```
+pnpm 版本号 安装
 
-- pnpm 版本号 安装
 ```
 pnpm add @deepseek-ai/dsh@0.1.6-alpha.1
 ```
