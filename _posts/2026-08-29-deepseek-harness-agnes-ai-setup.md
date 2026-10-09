@@ -113,6 +113,8 @@ pnpm exec dsh plugin --profile web add @xxxyz/dsh-mcp-manager@latest
 
 - 这个插件有个bug，会导致 任何工具名里含 __ 的 MCP 服务都会计数为 0
 - 修掉贪婪正则，:927 改为非贪婪：
+- 文件位置`C:\Users\Administrator\.dsh\profiles\web\node_modules\@xxxyz\dsh-mcp-manager\lib`
+- index.js
 
 ```
 .match(/^mcp__([A-Za-z0-9_-]+?)__/);
