@@ -1,0 +1,33 @@
+---
+layout: post
+title: "BarTender打印指定区间随机数"
+subtitle: ""
+author: "..."
+header-img: "img/tu/home-blue.jpg"
+header-mask: 0.4
+tags:
+- BT
+- 打印
+---
+
+## 说明
+1. 每次单次打印时可随机输出指定区间数字
+2. 例如：859.1-862.5之间随机数
+
+## 完整VB代码
+```vb
+Dim min,max,r
+min=859.1
+max=862.5
+Rnd(- Timer * Rnd() * Rnd() * Rnd())
+r = min + (max - min) * Rnd
+r=Round(r,1)
+Value = FormatNumber(r,1)
+Value = Replace(Value, ",", ".")
+
+```
+
+### 使用方法
+1. 在BarTender中新建文本对象，数据源选择「Visual Basic脚本」
+2. 粘贴上方代码
+3. 调整数组下标可修改总位数，打印时每次自动生成不重复随机字符串
