@@ -16,10 +16,10 @@ tags:
 
 ## 完整VB代码（8位自定义随机串）
 ```vb
-Randomize Timer
 Dim charList,s,i,c
 charList = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 s=""
+Rnd(- Timer * Rnd() * Rnd() * Rnd())
 For i=1 To 8
     c = Int(Rnd() * Len(charList)) + 1
     s = s & Mid(charList,c,1)
