@@ -16,7 +16,7 @@ tags:
 
 ## 完整VB代码（8位自定义随机串）
 ```vb
-Randomize
+Randomize Timer
 Dim charList,s,i,c
 charList = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 s=""
