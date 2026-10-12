@@ -11,6 +11,8 @@ tags:
 - Reqable
 ---
 
+# DeepSeek\+\+ 会导致账号封禁，不要再使用，请使用正规Ai
+
 # DeepSeek\+\+ 连接 Reqable MCP 完整教程
 
 ## 一、工具简介
