@@ -17,7 +17,7 @@ tags:
 3. 重启资源管理器生效
 
 ## 注册表reg完整代码
-```reg
+```
 Windows Registry Editor Version 5.00
 
 ; ====================== 只需要修改这里的路径 ======================
@@ -44,7 +44,7 @@ Windows Registry Editor Version 5.00
 
 ## 重启资源管理器命令
 按下 Win+R 输入 cmd 执行下面命令：
-```cmd
+```
 taskkill /f /im explorer.exe && start explorer.exe
 ```
 
