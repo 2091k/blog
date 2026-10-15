@@ -66,6 +66,34 @@ cloudflared service install    #运行自启动安装
 systemctl start cloudflared    #启动服务
 systemctl status cloudflared   #查看运行状态  可随时ctrl + c 中止。
 ```
+## 如需要添加多个子域名
+配置如下
+```
+tunnel: mytunnel
+credentials-file: /root/.cloudflared/你的隧道UUID.json
+
+ingress:
+  # 云盘
+  - hostname: cloud.2091k.cn
+    service: http://127.0.0.1
+  # 小程序API后台
+  - hostname: api.2091k.cn
+    service: http://127.0.0.1:8080
+  # 打印解析后台
+  - hostname: print.2091k.cn
+    service: http://127.0.0.1:8081
+  # 兜底404，必须写最后一行
+  - service: http_status:404
+```
+
+添加新的子域名到DNS
+```
+cloudflared tunnel route dns mytunnel print.baidu.com
+```
+最后 修改完 yml 后，**重启 cloudflared 服务**才会加载新 ingress 规则
+```
+sudo systemctl restart cloudflared
+```
 
 ## 输入cloud.2091k.cn就可以访问了
 [cloud.2091k.cn](https://cloud.2091k.cn/)
