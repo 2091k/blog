@@ -97,17 +97,15 @@ sudo systemctl restart cloudflared
 
 # 添加其他域名
 - **新增一段 hostname**，示例第二个域名：`shturl.cc/oN`
+
 ```
 tunnel: 275fe7bb-5948-45a0-bda7-30da7d154ddf
 credentials-file: /root/.cloudflared/275fe7bb-5948-45a0-bda7-30da7d154ddf.json
 ingress:
-  # 第一个域名
   - hostname: cloud.2091k.cn
     service: http://127.0.0.1
-  # ==========新增第二个域名配置==========
   - hostname: shturl.cc/oN
     service: http://127.0.0.1:8080
-  # 兜底404 必须保留在最后一行！！
   - service: http_status:404
 ```
 
