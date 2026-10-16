@@ -95,5 +95,34 @@ cloudflared tunnel route dns mytunnel print.baidu.com
 sudo systemctl restart cloudflared
 ```
 
+# 添加其他域名
+- **新增一段 hostname**，示例第二个域名：`shturl.cc/oN`
+```
+tunnel: 275fe7bb-5948-45a0-bda7-30da7d154ddf
+credentials-file: /root/.cloudflared/275fe7bb-5948-45a0-bda7-30da7d154ddf.json
+ingress:
+  # 第一个域名
+  - hostname: cloud.2091k.cn
+    service: http://127.0.0.1
+  # ==========新增第二个域名配置==========
+  - hostname: shturl.cc/oN
+    service: http://127.0.0.1:8080
+  # 兜底404 必须保留在最后一行！！
+  - service: http_status:404
+```
+
+- 然后在cf对应域名下面手动添加DNS解析
+- CF内网穿透位置`联网-Tunnels`
+
+```
+类型-CNAME
+目标-隧道ID.cfargotunnel.com
+```
+- 然后重启服务,就可以在CF后台看到新添加的域名
+```
+sudo systemctl restart cloudflared
+```
+
+
 ## 输入cloud.2091k.cn就可以访问了
 [cloud.2091k.cn](https://cloud.2091k.cn/)
