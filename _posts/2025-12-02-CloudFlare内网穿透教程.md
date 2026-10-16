@@ -113,11 +113,11 @@ ingress:
 
 - 然后在cf对应域名下面手动添加DNS解析
 - CF内网穿透位置`联网-Tunnels`
-
 ```
 类型-CNAME
 目标-隧道ID.cfargotunnel.com
 ```
+
 - 然后重启服务,就可以在CF后台看到新添加的域名
 ```
 sudo systemctl restart cloudflared
