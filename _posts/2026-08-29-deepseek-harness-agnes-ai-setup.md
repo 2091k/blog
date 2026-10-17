@@ -120,5 +120,19 @@ pnpm exec dsh plugin --profile web add @xxxyz/dsh-mcp-manager@latest
 .match(/^mcp__([A-Za-z0-9_-]+?)__/);
 ```
 
+## 版本不匹配时
+
+#### 方案 1：直接放行（按提示命令，快速安装，承担兼容性风险）
+
+```
+pnpm exec dsh plugin --profile web allow-version @xxxyz/dsh-mcp-manager@2.2.7 --dsh-version 0.2.0-rc.2 --accept-risk
+```
+
+放行完成后，再执行添加插件：
+
+```
+pnpm exec dsh plugin --profile web add @xxxyz/dsh-mcp-manager@latest
+```
+
 ## 插件仓库地址
 [https://awesome-dsh-plugin.com/zh/](https://awesome-dsh-plugin.com/zh/)
