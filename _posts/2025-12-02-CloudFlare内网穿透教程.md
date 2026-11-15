@@ -19,8 +19,8 @@ tags:
 64位arm平台选择【cloudflared-linux-arm64】
 
 ### 我打包了arm和arm64位的，可供下载
-### 蓝奏下载地址cloudflared.zip
-[cloudflared.zip](https://wwi.lanzoup.com/i5JQ61z8plwd)
+### 蓝奏下载地址cloudflared.zip  密码`cf`
+[cloudflared.zip](https://wwbda.lanzouv.com/b02sepds4b)
 
 下载好命名cloudflared放到放到/usr/bin/
 
